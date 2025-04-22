@@ -1,6 +1,9 @@
 # Template
 AdminLTE/
 
+#htacess
+.htacess
+
 # System / Log files
 *.DS_Store
 *.log
