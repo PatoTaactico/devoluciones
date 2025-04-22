@@ -18,7 +18,7 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-8">
           <div class="card">
             <div class="card-body">
               <table id="tblSedes" class="table table-bordered table-striped">
@@ -29,7 +29,7 @@
                     <th>Rol</th>
                     <th>Ficha</th>
                     <th>Fecha</th>
-                    <th>Serial</th>
+                    <th>Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -39,7 +39,11 @@
                     <td>Admin</td>
                     <td>F123</td>
                     <td>2023-10-01</td>
-                    <td>ABC123</td>
+                    <td class="text-center align-middle">
+                      <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-folder"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>789012</td>
@@ -47,7 +51,11 @@
                     <td>User</td>
                     <td>F456</td>
                     <td>2023-10-02</td>
-                    <td>XYZ789</td>
+                    <td class="text-center align-middle">
+                      <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-folder"></i>
+                      </button>
+                    </td>
                   </tr>
                   <tr>
                     <td>345678</td>
@@ -55,24 +63,63 @@
                     <td>Manager</td>
                     <td>F789</td>
                     <td>2023-10-03</td>
-                    <td>LMN456</td>
+                    <td class="text-center align-middle">
+                      <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-folder"></i>
+                      </button>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
+        <!-- card visualizacion informacion -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="image">
+                <img class="img-circle elevation-2 justify-content-between" alt="User Image">
+              </div>
+              <div class="info justify-content-between">
+                <h6>jhon doe</h6>
+              </div>
+              <table class="table table-bordered table-striped">
+                <tr>
+                  <th>Identificacion</th>
+                  <td>Juan</td>
+                </tr>
+                <tr>
+                  <th>Ficha</th>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <th>Placa</th>
+                  <td>Bogotá</td>
+                </tr>
+                <tr>
+                  <th>n° telefonico</th>
+                  <td>1212123144</td>
+                </tr>
+                <tr>
+                  <th>Direccionn</th>
+                  <td>cr2iwjsiw</td>
+                </tr>
+              </table>
+              <div class="card-footer d-flex justify-content-between ml-2">
+                <button class="btn btn-danger float-right mr-2 ml-2" data-toggle="modal" data-target="#modalMalEstado">
+                  Mal Estado
+                </button>
+                <button class="btn btn-success float-right mr-2 ml-2" data-toggle="modal" data-target="#modalBuenEstado">
+                  Buen Estado
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <div class="card-footer d-flex justify-content-end ml-2">
-    <button  class="btn btn-danger float-right mr-2 ml-2" data-toggle="modal" data-target="#modalMalEstado">
-      Mal Estado
-    </button>
-    <button  class="btn btn-success float-right" data-toggle="modal" data-target="#modalBuenEstado" >
-      Buen Estado
-    </button>
-  </div>
 </div>
 
 
@@ -104,7 +151,7 @@
 </div>
 
 <script>
-  document.getElementById('btnEnviarReporte').addEventListener('click', function () {
+  document.getElementById('btnEnviarReporte').addEventListener('click', function() {
     const reporte = document.getElementById('reporteMalEstado').value;
 
     if (reporte.trim() === '') {
