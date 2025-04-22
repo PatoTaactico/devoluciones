@@ -39,6 +39,7 @@
                     <td>Admin</td>
                     <td>F123</td>
                     <td>2023-10-01</td>
+                    <!-- botones de accion -->
                     <td class="text-center align-middle">
                       <button class="btn btn-navbar" type="submit">
                       <i class="fas fa-folder"></i>
@@ -51,6 +52,7 @@
                     <td>User</td>
                     <td>F456</td>
                     <td>2023-10-02</td>
+                    <!-- botones de accion -->
                     <td class="text-center align-middle">
                       <button class="btn btn-navbar" type="submit">
                       <i class="fas fa-folder"></i>
@@ -63,6 +65,7 @@
                     <td>Manager</td>
                     <td>F789</td>
                     <td>2023-10-03</td>
+                    <!-- botones de accion -->
                     <td class="text-center align-middle">
                       <button class="btn btn-navbar" type="submit">
                       <i class="fas fa-folder"></i>
