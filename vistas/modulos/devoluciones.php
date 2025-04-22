@@ -39,7 +39,7 @@
                     <td>Admin</td>
                     <td>F123</td>
                     <td>2023-10-01</td>
-                    <td>ABC123</td>
+                    <td>prestamo</td>
                   </tr>
                   <tr>
                     <td>789012</td>
@@ -47,7 +47,7 @@
                     <td>User</td>
                     <td>F456</td>
                     <td>2023-10-02</td>
-                    <td>XYZ789</td>
+                    <td>prestamo</td>
                   </tr>
                   <tr>
                     <td>345678</td>
@@ -55,7 +55,7 @@
                     <td>Manager</td>
                     <td>F789</td>
                     <td>2023-10-03</td>
-                    <td>LMN456</td>
+                    <td>prestamo</td>
                   </tr>
                 </tbody>
               </table>
@@ -75,10 +75,9 @@
   </div>
 </div>
 
-
 <!-- Modal Mal Estado -->
 <div class="modal fade" id="modalMalEstado" tabindex="-1" role="dialog" aria-labelledby="modalMalEstadoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document"> <!-- Tamaño uniforme -->
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modalMalEstadoLabel">Reporte de Mal Estado</h5>
@@ -93,9 +92,9 @@
             <label for="reporteMalEstado">Descripción del Problema</label>
             <textarea class="form-control" id="reporteMalEstado" name="reporteMalEstado" rows="4" required></textarea>
           </div>
-          <div class="d-flex justify-content-center mt-4">
-            <button type="button" class="btn btn-danger mr-2" data-dismiss="modal" style="width: 150px;">Cancelar</button>
-            <button type="button" class="btn btn-success" id="btnEnviarReporte" style="width: 150px;">Enviar</button>
+          <div class="d-flex justify-content-center mt-3">
+            <button type="button" class="btn btn-danger mr-2" data-dismiss="modal" >Cancelar</button>
+            <button type="button" class="btn btn-success" id="btnEnviarReporte" >Enviar</button>
           </div>
         </form>
       </div>
