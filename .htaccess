@@ -1,7 +1,7 @@
 Options All -Indexes
 RewriteEngine On
 RewriteBase /hermes/
-RewriteBase /hermes_user/hermes/
+RewriteBase /devoluciones
 RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1 [L]
 
 <IfModule mod_headers.c>
